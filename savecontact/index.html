@@ -1,0 +1,17 @@
+<html>
+    <head>
+    <title>Add Number to your Contact</title>
+    <script type="text/javascript">
+    function load(){
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const phone = urlParams.get('phone')
+        console.log(phone);
+        window.location.href = "tel:" + phone;
+    }
+    </script>
+    </head>
+
+    <body onload="load()">
+    </body>
+</html> 
